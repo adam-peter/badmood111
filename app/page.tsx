@@ -61,6 +61,12 @@ const Home = () => {
           software engineering without ever touching the subject in school.
         </p>
       </section>
+
+      <footer>
+        Get in touch link 
+        social links
+        @badmood111
+      </footer>
     </div>
   );
 };
