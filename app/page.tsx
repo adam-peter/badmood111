@@ -1,91 +1,68 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from './page.module.css'
+import React from "react";
+import Image from "next/image";
 
-const inter = Inter({ subsets: ['latin'] })
-
-export default function Home() {
+const Home = () => {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
+    <div>
+      <p>Hi, I'm</p>
+      <h1>Adam Peter</h1>
+      <Image src="" alt="---" width="50" height="50" />
+      <div className="flex flex-col">
+        <a href="/#software">...software engineer...</a>
+        <a href="/#entrepreneurship">...entrepreneur...</a>
+        <a href="/#learning">...reader, writer, learner...</a>
+      </div>
+
+      <section className="mt-4 bg-myWhite text-myBlack">
+        <h2 id="software">I 🖤 software.</h2>
         <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
+          Really. Tinkering with technology was one of my deepest passions ever
+          since childhood.
         </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+        <p>
+          Building legos, reading tech magazines and repairing (read: breaking
+          functional) electronics was a daily ocupation of mine.
+        </p>
+        <p>No wonder I decided to become a developer.</p>
+      </section>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-        <div className={styles.thirteen}>
-          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-        </div>
-      </div>
+      <section className="mt-4">
+        <h2 id="entrepreneurship">Entrepreneurship is my raison d'être.</h2>
+        <p>
+          Operating and scaling online businesses allows me to provide leveraged
+          value to a large population and **impact millions**.
+        </p>
+        <p>
+          With extensive education and experience in management, copywriting,
+          and selling in general, I have worked on numerous professional
+          projects, mainly concerning web application development.
+        </p>
+        <p>
+          Whether working solo or as part of a team, in a personal or enterprise
+          setting, I have honed my skills and gained valuable insights.
+        </p>
+        <p>
+          I strive to ballance my love for technology with my burning desire to
+          make a difference in the world. That desire, I portray through
+          entrepreneurship.
+        </p>
+      </section>
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <section className="mt-4 bg-myWhite text-myBlack">
+        <h2 id="learning">There’s always something new to learn.</h2>
+        <p>
+          My grandfather taught me to read when I was 4 years old. I’ve been
+          reading everything that caught my interest, until I developed a love
+          for reading itself.
+        </p>
+        <p>
+          The internet only sped up my self-education. I've taken countless
+          programming courses and built my own projects, teaching myself
+          software engineering without ever touching the subject in school.
+        </p>
+      </section>
+    </div>
+  );
+};
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={inter.className}>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p className={inter.className}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
-}
+export default Home;
