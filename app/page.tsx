@@ -3,10 +3,10 @@ import Image from "next/image";
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="font-quicksand">
       <section className="h-screen max-w-screen">
         <div className="mx-auto my-32 max-w-max text-center">
-          <p className="mx-auto w-max text-6xl">Hi, I’m</p>
+          <p className="mx-auto w-max text-6xl font-extralight">Hi, I’m</p>
           <h1 className="text-8xl font-extralight tracking-wide">Adam Peter</h1>
         </div>
         <Image
@@ -17,33 +17,14 @@ const Home = () => {
           height="300"
         />
         <div className="mx-auto flex w-max flex-col space-y-6 rounded p-8 text-center">
-          <a className="group relative text-3xl" href="/#software">
-            <span className="absolute -left-6 text-white opacity-100 group-hover:opacity-0">
-              ...
-            </span>
+          <a className="text-3xl" href="/#software">
             software engineer
-            <span className="absolute -right-6 text-blue-500 opacity-0 group-hover:opacity-100">
-              ...
-            </span>
           </a>
-
-          <a className="group relative text-3xl" href="/#entrepreneurship">
-            <span className="absolute -left-6 text-white opacity-100 group-hover:opacity-0">
-              ...
-            </span>
-            entrepreneur
-            <span className="absolute -right-6 text-blue-500 opacity-0 group-hover:opacity-100">
-              ...
-            </span>
+          <a className="text-3xl" href="/#entrepreneurship">
+          entrepreneur
           </a>
-          <a className="group relative text-3xl" href="/#learning">
-            <span className="absolute -left-6 text-white opacity-100 group-hover:opacity-0">
-              ...
-            </span>
-            reader, writer, learner
-            <span className="absolute -right-6 text-blue-500 opacity-0 group-hover:opacity-100">
-              ...
-            </span>
+          <a className="text-3xl" href="/#learning">
+          reader, writer, learner
           </a>
         </div>
       </section>

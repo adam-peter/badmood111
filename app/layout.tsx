@@ -9,7 +9,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head />
-      <body className="bg-myBlack text-myWhite">
+      <body className="bg-myBlack text-myWhite font-manrope">
         <Navbar />
         {children}
       </body>

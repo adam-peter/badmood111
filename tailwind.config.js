@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
@@ -10,7 +11,11 @@ module.exports = {
       colors: {
         "myBlack": "#181e30",
         "myWhite": "#f1f0f6"
-      }
+      },
+      fontFamily: {
+        quicksand: ["Quicksand", "sans"],
+        manrope: ["Manrope", "sans"]
+      },
     },
   },
   plugins: [],
