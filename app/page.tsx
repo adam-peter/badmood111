@@ -4,8 +4,10 @@ import Image from "next/image";
 const Home = () => {
   return (
     <div>
-      <p>Hi, I'm</p>
-      <h1>Adam Peter</h1>
+      <div className="mx-auto w-max">
+        <p className="text-4xl mx-auto w-max">Hi, I’m</p>
+        <h1 className="text-6xl tracking-wide font-extralight">Adam Peter</h1>
+      </div>
       <Image src="" alt="---" width="50" height="50" />
       <div className="flex flex-col">
         <a href="/#software">...software engineer...</a>
@@ -56,17 +58,13 @@ const Home = () => {
           for reading itself.
         </p>
         <p>
-          The internet only sped up my self-education. I've taken countless
+          The internet only sped up my self-education. I’ve taken countless
           programming courses and built my own projects, teaching myself
           software engineering without ever touching the subject in school.
         </p>
       </section>
 
-      <footer>
-        Get in touch link 
-        social links
-        @badmood111
-      </footer>
+      <footer>Get in touch link social links @badmood111</footer>
     </div>
   );
 };
